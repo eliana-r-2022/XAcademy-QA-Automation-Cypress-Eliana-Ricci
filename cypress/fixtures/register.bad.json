@@ -1,0 +1,15 @@
+{
+  "nombres": "",
+  "apellido": "",
+  "dni": "123",
+  "fechaNacimiento": {
+    "day": "",
+    "month": "",
+    "year": ""
+  },
+  "email": "correo-malo",
+  "password": "123",
+  "telefono": "11",
+  "provincia": "",
+  "localidad": ""
+}

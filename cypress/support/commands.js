@@ -1,4 +1,4 @@
-// Creación de comandos
+// Creación de comandos - Actividad Aserciones
 Cypress.Commands.add('completarNombres', (nombre) => {
   cy.get('[data-cy="input-nombres"]').clear().type(nombre)
 })
@@ -46,3 +46,25 @@ Cypress.Commands.add('completarPassword', (password) => {
 Cypress.Commands.add('completarConfirmarPassword', (password) => {
   cy.get('[data-cy="input-repetir-password"]').clear().type(password)
 })
+
+//-------------------------------------------------------------------
+
+// Comandos - Actividad Automatización - fixtures
+Cypress.Commands.add("write", (field, value) => {
+  cy.get(`[data-cy="input-${field}"]`).clear().type(value);
+});
+
+Cypress.Commands.add("selectCombo", (field, option) => {
+  cy.get(`[data-cy="select-${field}"]`).clear().type(option);
+  cy.contains("li span", option).click();
+});
+
+Cypress.Commands.add("setBirthDate", ({ day, month, year }) => {
+  cy.get('[data-cy="input-fecha-nacimiento"] [data-type="day"]').clear().type(day);
+  cy.get('[data-cy="input-fecha-nacimiento"] [data-type="month"]').clear().type(month);
+  cy.get('[data-cy="input-fecha-nacimiento"] [data-type="year"]').clear().type(year);
+});
+
+Cypress.Commands.add("submitForm", () => {
+  cy.get('[data-cy="btn-register"]').click();
+});

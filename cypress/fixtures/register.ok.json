@@ -1,0 +1,16 @@
+{
+  "nombres": "Eliana Celeste",
+  "apellido": "Ricci",
+  "dni": "33111222",
+  "fechaNacimiento": {
+    "day": "12",
+    "month": "05",
+    "year": "1988"
+  },
+  "email": "el.ricci88@gmail.com",
+  "password": "Password123!",
+  "telefono": "1123456789",
+  "provincia": "Buenos Aires",
+  "localidad": "San Justo"
+}
+
